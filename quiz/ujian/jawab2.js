@@ -3,9 +3,13 @@
 // Function akan me-return kata yang dibalik. Contoh, jika kata adalah "John Doe", function akan me-return "eoD nhoJ".
 
 function balikKata(kata) {
-    // you can only write your code here!
+    let balikKata = "";
+    for (let i = kata.length - 1; i >= 0; i--) {
+        balikKata += kata[i];
+    }
+    return balikKata;
 }
-  
+
 // TEST CASES
 console.log(balikKata('Hello World and Coders')); // sredoC dna dlroW olleH
 console.log(balikKata('John Doe')); // eoD nhoJ
